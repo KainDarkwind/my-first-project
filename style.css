@@ -1,0 +1,156 @@
+
+:root {
+    --dwarf-color: #2fd;
+    --blue-400: #b2d4f5;
+    --blue-500: #93bfeb;
+    --blue-600: #74abe2;
+    --blue-700: #5899DA;
+    --blue-800: #367dc4;
+    --blue-900: #1866b4;
+
+    --orange-400: #fcc3a7;
+    --orange-500: #f5aa85;
+    --orange-600: #ef8d5d;
+    --orange-700: #E8743B;
+    --orange-800: #da5a1b;
+    --orange-900: #cc4300;
+
+    --green-400: #8fd1bb;
+    --green-500: #66c2a3;
+    --green-600: #3fb68e;
+    --green-700: #19A979;
+    --green-800: #0e8c62;
+    --green-900: #03734d;
+
+    --grey-400: #d5dadc;
+    --grey-500: #bac1c4;
+    --grey-600: #9ea8ad;
+    --grey-700: #848f94;
+    --grey-800: #69767c;
+    --grey-900: #596468;
+
+    --base-size: 16px;
+
+    --size-01: calc(.1 * var(--base-size));
+    --size-02: calc(.25 * var(--base-size));
+    --size-03: calc(.5 * var(--base-size));
+    --size-04: calc(1 * var(--base-size));
+    --size-05: calc(1.5 * var(--base-size));
+    --size-06: calc(2 * var(--base-size));
+    --size-07: calc(3 * var(--base-size));
+    --size-08: calc(4 * var(--base-size));
+    --size-09: calc(5 * var(--base-size));
+    --size-10: calc(6 * var(--base-size));
+    --size-11: calc(7 * var(--base-size));
+    --size-12: calc(8 * var(--base-size));
+  }
+
+/* (480px, 768px, 1024px, and 1280px). */
+
+h2{
+color: var(--blue-700);
+}
+
+h2:hover{
+color: var(--blue-900);
+}
+
+h4{
+color: var(--blue-500);
+}
+
+h5{
+color: var(--green-700);
+}
+
+h5:hover{
+color: var(--green-900);
+}
+
+.sub:hover{
+cursor: pointer;
+}
+
+li:hover {
+font-weight: 500;
+}
+
+.feature1 {
+margin-left: auto;
+margin-right: auto;
+width: 750px;
+}
+
+.feature1 h1 {
+font-size: var(--size-09);
+margin-left: var(--size-03);
+}
+
+.feature1 .profile-photo {
+width: var(--size-09);
+margin-bottom: var(--size-06);
+margin-left: var(--size-03);
+}
+
+@media (max-width: 768px) {
+.feature1 {
+margin-left: auto;
+margin-right: auto;
+width: 450px;
+}
+
+.feature1 h1 {
+font-size: var(--size-08);
+margin-left: var(--size-03);
+}
+
+.feature1 .profile-photo {
+width: var(--size-08);
+margin-bottom: var(--size-06);
+}}
+
+@media (max-width: 480px) {
+.feature1 {
+margin-left: auto;
+margin-right: auto;
+width: 325px;
+}
+
+.feature1 h1 {
+font-size: var(--size-07);
+margin-left: var(--size-02);
+}
+
+.feature1 .profile-photo {
+width: var(--size-07);
+margin-bottom: var(--size-05);
+}
+}
+
+.iconbig {
+width: var(--size-04)
+}
+
+.border1{
+border-color: black;
+border-width: var(--size-02);
+border-style: solid;
+border-radius: var(--size-02);
+padding: 10px
+}
+
+textarea{
+width: 100%
+}
+
+/* .iconxbig {
+width: var(--size-05)
+}
+
+.test1 {
+background-color: var(--blue-400);
+}  */
+
+button:disabled {
+cursor: not-allowed;
+}
